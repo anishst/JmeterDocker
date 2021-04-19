@@ -1,6 +1,6 @@
-# Jmeter with Docker
+# Jmeter with Jenkins and Docker
 
-Run Jmeter tests in a docker container. Current version being used in Dockerfile is 5.4.1
+Run Jmeter tests in a docker container using Jenkins Pipeline. Current version being used in Dockerfile is 5.4.1
 
 ## How to use in Jenkins
 
