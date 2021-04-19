@@ -26,7 +26,9 @@ pipeline {
             echo 'Publishing reports...'
             //  below command shows jtl in the artifact area
             // archiveArtifacts 'scripts/*.jtl'
-            perfReport 'scripts/results.jtl'
+
+            // archive perf test results; https://www.jenkins.io/doc/pipeline/steps/performance/
+            perfReport '**/*.jtl'
             
         }
     }
