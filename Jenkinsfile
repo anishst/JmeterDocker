@@ -9,7 +9,7 @@ pipeline {
             steps {
                     dir('app') {
                         // checkout code
-                        git branch: 'master', url: 'https://github.com/anishst/JavaSpringBoot.git'
+                        git branch: 'main', url: 'https://github.com/anishst/JavaSpringBoot.git'
                     }
             }
         }
