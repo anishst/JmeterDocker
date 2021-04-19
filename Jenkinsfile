@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Jmeter') {
             steps {
-                sh 'jmeter --v'
+                sh 'jmeter --version'
             }
         }
 
