@@ -10,7 +10,7 @@ pipeline {
                 // sh 'jmeter -n -t ./scripts/CSVSample.jmx'
 
                 // run script with html report - 
-                sh 'jmeter -n -t ./scripts/CSVSample.jmx -e -o ./scripts/reports'
+                sh 'jmeter -n -t ./scripts/CSVSample.jmx -l ./scripts/CSVSample.jtl -e -o ./scripts/reports'
             }
         }
 
