@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'jmeter --version'
                 sh 'ls'
-                ech "Running a sample Jmenter script..."
+                echo "Running a sample Jmenter script..."
                 sh 'jmeter -n -t ./scripts/CSVSample.jmx'
             }
         }
