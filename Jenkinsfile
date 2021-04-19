@@ -1,4 +1,6 @@
-    {
+#!groovy
+
+pipeline {
     agent any
     stages {
 
@@ -17,7 +19,7 @@
         }
 
         stage('Build App') {
-         agent {
+            agent {
                 dockerfile {
                     dir './app'
                 }
