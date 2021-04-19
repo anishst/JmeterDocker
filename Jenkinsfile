@@ -16,19 +16,18 @@ pipeline {
             }
         }
 
-        stage('Build App') {
-            agent {
-                dockerfile {
-                    sh "pwd"
-                    dir './app'
-                }
-            }
-            steps {
-                    echo "${env.WORKSPACE}"
-                    sh "pwd"
-                    sh "ls"
-            }
-        }
+        // stage('Build App') {
+        //     agent {
+        //         dockerfile {
+        //             dir './app'
+        //         }
+        //     }
+        //     steps {
+        //             echo "${env.WORKSPACE}"
+        //             sh "pwd"
+        //             sh "ls"
+        //     }
+        // }
 
         stage('Jmeter') {
             agent {
