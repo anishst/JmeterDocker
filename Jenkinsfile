@@ -18,7 +18,7 @@ pipeline {
         stage('Build App') {
             agent {
                 dockerfile {
-                    dir './app'
+                    dir "${env.WORKSPACE}/app"
                 }
             }
             steps {

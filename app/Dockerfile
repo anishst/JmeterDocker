@@ -7,8 +7,8 @@
 FROM maven:3.6.0-jdk-11-slim AS build
 RUN echo "CURRENT DIRECTORY"
 RUN pwd
-COPY app/app/src /home/app/src
-COPY app/app/pom.xml /home/app
+COPY app/src /home/app/src
+COPY app/pom.xml /home/app
 RUN mvn -f /home/app/pom.xml clean package
 
 # this can be used when jar already exists in build folder
