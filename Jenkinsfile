@@ -7,7 +7,7 @@ pipeline {
         stage('Java App Code') {
 
             steps {
-                    dir'./app' {
+                    dir('app') {
                         // checkout code
                         echo "${env.WORKSPACE}"
                         url: 'https://github.com/anishst/JavaSpringBoot.git'
