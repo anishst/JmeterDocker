@@ -15,7 +15,7 @@ pipeline {
                 //      -t  [name of JMX file that contains the Test Plan]
                 //       -l  [name of JTL file to log sample results to]
                 //       -f force delete existing results files and web report folder if present before starting the test
-                sh 'jmeter -n -f -t ./scripts/CSVSample.jmx -l ./scripts/CSVSample.jtl -e -o ./scripts/reports/'
+                sh 'jmeter -n -f -t ./scripts/CSVSample.jmx -l ./scripts/results.jtl -e -o ./scripts/reports/'
             }
         }
 
