@@ -9,11 +9,8 @@ pipeline {
             steps {
                     dir('app') {
                         // checkout code
-                        echo "${env.WORKSPACE}"
-                        url: 'https://github.com/anishst/JavaSpringBoot.git'
-                        branch: 'master'
-                        sh "pwd"
-                        sh "ls"
+                        url: 'https://github.com/anishst/JavaSpringBoot.git',
+                        branch: 'multiple_dockerfiles'
                     }
             }
         }
