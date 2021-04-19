@@ -19,6 +19,7 @@ pipeline {
         stage('Build App') {
             agent {
                 dockerfile {
+                    sh "pwd"
                     dir './app'
                 }
             }
