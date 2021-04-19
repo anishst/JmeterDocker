@@ -24,7 +24,7 @@ pipeline {
     post { 
         always { 
             echo 'Publishing reports...'
-            archiveArtifacts '.script/reports/*.jtl'
+            archiveArtifacts './scripts/reports/*.jtl'
         }
     }
 }
