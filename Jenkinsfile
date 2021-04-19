@@ -24,7 +24,10 @@ pipeline {
     post { 
         always { 
             echo 'Publishing reports...'
-            archiveArtifacts 'scripts/*.jtl'
+            //  below command shows jtl in the artifact area
+            // archiveArtifacts 'scripts/*.jtl'
+            perfReport 'scripts/jmeter.jtl'
+            
         }
     }
 }

@@ -12,6 +12,7 @@ Run Jmeter tests in a docker container. Current version being used in Dockerfile
 - [Jmeter command ref](https://jmeter.apache.org/usermanual/get-started.html#options)
 - [Jmeter Binary files](https://ftp.wayne.edu/apache/jmeter/)
 - [Jenkins Performance Plugin](https://www.jenkins.io/doc/pipeline/steps/performance/)
+    - [Reporting docs](http://jenkinsci.github.io/performance-plugin/Reporting.html)
 - [Using Jmeter with Jenkins](https://www.jenkins.io/doc/book/using/using-jmeter-with-jenkins/)
     - [Blazmeter tutorial](https://www.blazemeter.com/blog/running-jmeter-test-jenkins-pipeline-tutorial)
     - [another example](https://www.baeldung.com/ops/jenkins-and-jmeter)
