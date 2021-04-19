@@ -4,7 +4,7 @@ Run Jmeter tests in a docker container using Jenkins Pipeline. Current version b
 
 ## How to use in Jenkins
 
-1. create a pipeline job 
+1. create a pipeline job; assumes [Jenkins Performance Plugin](https://www.jenkins.io/doc/pipeline/steps/performance/) is installed
 2. setup to use pipeline script from Git Repo
 
 ## Resources
