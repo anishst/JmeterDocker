@@ -16,11 +16,11 @@ pipeline {
         }
 
         stage('Build App') {
-            // agent {
-            //     dockerfile {
-            //         dir './app'
-            //     }
-            // }
+            agent {
+                dockerfile {
+                    dir './app'
+                }
+            }
             steps {
                     echo " *****************   Buidling APP *****************${env.WORKSPACE}"
                     sh "pwd"
