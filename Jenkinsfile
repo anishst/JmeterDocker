@@ -9,8 +9,7 @@ pipeline {
             steps {
                     dir('app') {
                         // checkout code
-                        url: 'https://github.com/anishst/JavaSpringBoot.git',
-                        branch: 'multiple_dockerfiles'
+                        git branch: 'multiple_dockerfiles', url: 'https://github.com/anishst/JavaSpringBoot.git'
                     }
             }
         }
