@@ -5,7 +5,7 @@
 #
 
 FROM maven:3.6.0-jdk-11-slim AS build
-RUN ECHO "CURRENT DIRECTORY"
+RUN echo "CURRENT DIRECTORY"
 RUN pwd
 COPY app/app/src /home/app/src
 COPY app/app/pom.xml /home/app
