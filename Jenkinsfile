@@ -7,27 +7,25 @@ pipeline {
         stage('Java App Code') {
 
             steps {
-                // make dir for app
-                sh 'mkdir -p app'
-                    dir('app') {
-                        // checkout code
-                        git branch: 'main', url: 'https://github.com/anishst/JavaSpringBoot.git'
-                    }
+                dir('app') {
+                    // checkout code
+                    git branch: 'main', url: 'https://github.com/anishst/JavaSpringBoot.git'
+                }
             }
         }
 
-        // stage('Build App') {
-        //     agent {
-        //         dockerfile {
-        //             dir './app'
-        //         }
-        //     }
-        //     steps {
-        //             echo "${env.WORKSPACE}"
-        //             sh "pwd"
-        //             sh "ls"
-        //     }
-        // }
+        stage('Build App') {
+            agent {
+                dockerfile {
+                    dir './app'
+                }
+            }
+            steps {
+                    echo "${env.WORKSPACE}"
+                    sh "pwd"
+                    sh "ls"
+            }
+        }
 
         stage('Jmeter') {
             agent {
