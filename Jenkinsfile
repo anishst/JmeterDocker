@@ -26,7 +26,7 @@ pipeline {
             echo 'Publishing reports...'
             //  below command shows jtl in the artifact area
             // archiveArtifacts 'scripts/*.jtl'
-            perfReport 'scripts/jmeter.jtl'
+            perfReport 'scripts/results.jtl'
             
         }
     }
