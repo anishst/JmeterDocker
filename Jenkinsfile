@@ -1,25 +1,7 @@
 pipeline {
-    agent none
+    agent { dockerfile true }
     stages {
-        stage('Back-end') {
-         agent {
-                dockerfile {
-                    dir './Dockerfile_spring'
-                    label 'my-label1'
-                }
-            }
-            steps {
-                sh 'node --version'
-            }
-        }
-
         stage('Jmeter') {
-            agent {
-                dockerfile {
-                    dir './Dockerfile'
-                    label 'my-label'
-                }
-            }
             steps {
                 sh 'jmeter --version'
                 sh 'ls'
