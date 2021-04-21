@@ -64,7 +64,7 @@ pipeline {
                 echo "${env.WORKSPACE}"
                 sh "pwd"
                 sh "ls"
-                cleanWs()
+                // cleanWs()
             //  below command shows jtl in the artifact area
             // archiveArtifacts 'scripts/*.jtl'
 
