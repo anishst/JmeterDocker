@@ -10,7 +10,7 @@ pipeline {
                 echo " *****************   Checking out Code.... *****************${env.WORKSPACE}"
                 dir('app') {
                     // checkout code
-                    git branch: 'master', url: 'https://github.com/anishst/spring-boot.git'
+                    git branch: 'main', url: 'https://github.com/anishst/spring-boot.git'
                 }
             }
         }
